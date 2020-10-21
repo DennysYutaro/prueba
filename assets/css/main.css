@@ -1,0 +1,191 @@
+/*este en un comentario en css*/
+/*mis colores*/
+/*morado claro #A972E0*/
+/*rosado claro #F49390*/
+/*rosado oscuro #A2666F*/
+/*rosado fuerte #F45866*/
+/*morado fuerte #631A86*/
+/*rosa link :#d500f9*/
+/*mis colores*/
+/*etiqueta html para que se aplique en todo las fuentes*/
+/*MUY IMPORTANTE MI PAGINA DEBE SER CREADA PARA PANTALLAS*/
+/*LUEGO ADAGTANDO A PAGINAS MAS GRANDES CON media{} */
+html{
+  font-family: 'Nunito', sans-serif;
+}
+.container{
+  background: #bc4e9c;  /* color solido si no entiende alguna pagino de degrdados */
+  background: -webkit-linear-gradient(to right, #f80759, #bc4e9c);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f80759, #bc4e9c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+  display: flex;/*con esto podremos posicionar con flexbox*/
+  align-items: center;
+  justify-content: center;
+}
+/*links ver mas para modificar sus lineas*/
+a{
+  text-decoration: none;
+  color: #d500f9;
+}
+/* Siempre se usa en imaganes para que se vea igual en moviles*/
+img{
+  max-width: 100%;
+}
+
+/*links hover modifica el color cuando el curso pasa por el*/
+a:hover{
+  /*opacity nos permite controlar la opacidad va del 0 al 1*/
+  opacity: 0.8;
+}
+/*links visited cuando el link ya fue visitado cambia color*/
+/*a:visited{
+  background: red;
+}*/
+/*links active cuando el usuario preciona el boton cambia color*/
+a:active{
+  background: red;
+}
+/*links focus para que coloree con tab el link*/
+a:focus{
+  background: yellow;
+}
+.title{
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.content{
+  max-width: 960px;
+  max-height: 500px;
+  width: 100%;
+  height: 80vh;
+  background-color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 16),0 3px 6px rgba(0,0,0,0.23) ;
+  border-radius: 4px;
+  position: relative;
+  padding: 1.8em;
+  /*overflow proiedad que define como se comporta */
+  /*el contenido que se sale del elemento*/
+  /*overflow-y: scroll;
+  overflow-x: hidden;*/
+  overflow: scroll;
+}
+
+.content{
+  padding: 1em;
+}
+td{
+  display: block;
+  width: 100%;
+}
+/*pseudoclase nth-of-type selecciona un elemnto segun su posicion que este  */
+/* a lado de un elemento */
+td:nth-of-type(1){
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #642B73;
+}
+th{
+  display: none;
+}
+
+.actions{
+  position: absolute;
+  top:1em;
+  right: 1em;
+}
+
+.close{
+  height: 40px;
+  width: 40px;
+  color: white;
+  border-radius: 50%;
+  background-color: #642b73;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+  font-weight: 300;
+  cursor: pointer;
+  /*por eso x esta en display muy importante*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paragraph{
+  line-height: 1.8em;
+  font-weight: 300;
+}
+.fa-star,.fa-star-o{
+  background-color: #ffc400;
+}
+.table{
+  width: 100%;
+  border-spacing: 0;
+}
+/*para aplicar a toda la tabla*/
+.table td, .table th{
+  padding: 1em;
+  text-align: left;
+}
+/*hijos para aplicar a tablas dar vida*/
+/*odd impares de la tabla*/
+/*even pares de la tabla*/
+.table tr:nth-child(even){
+  background-color: #A972E0 ;
+}
+.title-item{
+  font-size: 3em;
+  border-bottom: #C6426E solid 2px;
+  padding-bottom: 1em;
+}
+
+.address{
+  font-weight: bold;
+  color: #642b73;
+  font-size: 1.2em;
+  margin-top: 2em;
+  /*inline-block ignora el margen*/
+  display: inline-block;
+}
+
+.main-images{
+  float: left;
+  margin-right: 1em;
+  height: 250px;
+}
+.position{
+  background-color: #C6426E;
+  color: white;
+  /*el pading aumenta como las manejillas del reloj */
+  padding: 0.5em;
+  /*border-top-left-radius: 2em;
+  border-top-right-radius: 2em;
+  border-bottom-left-radius: 2em;
+  border-bottom-right-radius: 2em;*/
+  /*todo eso vale a*/
+  border-radius: 4px;
+  margin-right: 0.5em;
+}
+/*media query : nos permite especificar una serie de propiedades*/
+/*se aplica solo si una condicion se cumples*/
+/*media print: si la pagina va ser impresa*/
+/*max-width: 500px solo para pantallas medio o iguales a 500px*/
+/*media para equipos pequeños */
+@media (min-height:550px) {
+  .content{
+    height: 500px;
+  }
+}
+/*Ahora para pantallas mas chicas hay demasiado blacon reducimos*/
+@media (min-width:900px) {
+  th{
+    display: table-cell;l
+  }
+  td{
+    width: auto;
+    display: table-cell;
+  }
+  td:nth-of-type(1){}
+    .content{
+      padding: 1.8em;
+  }
+}

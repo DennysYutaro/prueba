@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--para poder entrar a esta pagina-->
+<!--http://localhost:8000/productos/parches.html-->
+
+
+<!--solo usaremos 3 selecctores en esta pw:los de nombre,los clase,los de ID-->
+<!--selector de nombre primer pp {
+  color:red;}-->
+<!--selector de claser pp red{
+  height: 200px;
+  width: 100px;
+  background-color:red;
+}-->
+<!--selector de nombre clase p usamos atributo class="red"-->
+<!--el nombre de la clase es arbitrario puedes usar cualquier nombre-->
+<!--cada clase tiene un nombre pueden estar en una linea class="red texto-blanco"-->
+<!--separados por un espacio; no se puede repetir el atributo-->
+<!--ya que el navegador ignorara uno osea a una class-->
+<!--los selecctores de clase se le coloca un "." -->
+<!--nuestro 3 selector ID:el id es unico no puede ver 2 elementos  -->
+<!--con mismo id mientras ue selector por clase se puede asignar a -->
+<!--varios elementos por ejemplo id="boton-pago" unico solo un nombre-->
+
+<!--MUY PERO MUY IMPORTANTE AVISO==========LA carpeta SE LLAMA ASSETS ENVES DE aseets PENDEJO-->>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>La mejor sastreria de Quillabamba</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700i" rel="stylesheet">
+    <!--link:es una etiqueta que no necesita cierre-->
+    <!--link:busca en la carpeta css necesitamos especificar-->
+    <!--donde se enctra el documento con "rel" atributo importamos  css-->
+    <!--este link va a normalizar para que se vea igual en pc,android,etc -->
+    <!--importamos la libreria de font-awesone-->
+    <<!--<link rel="stylesheet" href="./font-awesome/css/fontawesome.min.css">-->>
+    <!--font-awesome vs.5 mas facil de usar con internet-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <!--IMPORTANTE SON ".."´PARA QUE HEREDO I/O JALE-->
+    <link  href="../assets/css/main.css" rel="stylesheet">
+    <!--link para importar animacion de animate copiamos tambien en index-->
+    <link rel="stylesheet" href="../assets/css/animate.css">
+<!--usaremos etiquetas semanticas-->
+  </head>
+  <body>
+    <!--primer div contiene toda la pagina se llama container-->
+    <div class="container">
+      <!--segundo div centra el contenido-->
+      <div class="content animated bounceInRight">
+        <div class="actions">
+          <a href="../" class="close">
+            <span>X</span>
+          </a>
+        </div>
+        <header>
+          <!--h1 muy importante para que el robot entienda la pagina-->
+          <h2 class="title-item">
+            <!--span se coloca a lado -->
+            <span class="position">1</span>
+            Parches
+          </h2>
+        </header>
+        <!--usaremos tablas pero ya no debemos ordenar nuestra-->
+        <!--pagina wweb con tablas pero sirven para otras cosas-->
+        <section>
+          <img src="../assets/images/parches.jpg" class="main-images" alt="Muy buenos Parches">
+          <div class="text">
+            <address class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              Mercado Satelite, frente a los bomberos puesto b-1
+            </address>
+            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="../javascript/mainjava.js"></script>
+  </body>
+</html>
